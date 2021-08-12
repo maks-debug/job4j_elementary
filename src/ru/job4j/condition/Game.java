@@ -10,13 +10,11 @@ public class Game {
         }
         if (name.equals("tetris")) {
             System.out.println("Start - tetris");
-        } else {
-            System.out.println("Start - Error");
         }
     }
 
     public static void main(String[] args) {
-        Game.menu("tank");
+        Game.menu("tanks");
         Game.menu("tetris");
     }
 }
