@@ -1,50 +1,39 @@
 package ru.job4j.condition;
 
 public class MultipleSwitchWeek {
+    /**
+     * @noinspection checkstyle:MissingSwitchDefault
+     */
     public static int numberOfDay(String name) {
         int result = -1;
-        switch (name) {
-            case "Monday":
-                result = 1;
-                break;
-            case "Понедельник":
-                result = 1;
-                break;
-            case "Tuesday":
-                result = 2;
-                break;
-            case "Вторник":
-                result = 2;
-                break;
-            case "Wednesday":
-                result = 3;
-                break;
-            case "Среда":
-                result = 3;
-                break;
-            case "Thursday":
-                result = 4;
-                break;
-            case "Четверг":
-                result = 4;
-                break;
-            case "Friday":
-                result = 5;
-                break;
-            case "Пятница":
-                result = 5;
-                break;
-            case "Saturday":
-                result = 6;
-                break;
-            case "Суббота":
-                result = 6;
-                break;
-            case "Sunday":
-                result = 7;
-                break;
-            case "Воскресенье":
-                result = 7;
+        if ("Monday".equals(name)) {
+            result = 1;
+        } else if ("Понедельник".equals(name)) {
+            result = 1;
+        } else if ("Tuesday".equals(name)) {
+            result = 2;
+        } else if ("Вторник".equals(name)) {
+            result = 2;
+        } else if ("Wednesday".equals(name)) {
+            result = 3;
+        } else if ("Среда".equals(name)) {
+            result = 3;
+        } else if ("Thursday".equals(name)) {
+            result = 4;
+        } else if ("Четверг".equals(name)) {
+            result = 4;
+        } else if ("Friday".equals(name)) {
+            result = 5;
+        } else if ("Пятница".equals(name)) {
+            result = 5;
+        } else if ("Saturday".equals(name)) {
+            result = 6;
+        } else if ("Суббота".equals(name)) {
+            result = 6;
+        } else if ("Sunday".equals(name)) {
+            result = 7;
+        } else if ("Воскресенье".equals(name)) {
+            result = 7;
         }
         return result;
     }
