@@ -6,33 +6,19 @@ public class MultipleSwitchWeek {
      */
     public static int numberOfDay(String name) {
         int result = -1;
-        if ("Monday".equals(name)) {
+        if ("Monday".equals(name) || "Понедельник".equals(name)) {
             result = 1;
-        } else if ("Понедельник".equals(name)) {
-            result = 1;
-        } else if ("Tuesday".equals(name)) {
+        } else if ("Tuesday".equals(name) || "Вторник".equals(name)) {
             result = 2;
-        } else if ("Вторник".equals(name)) {
-            result = 2;
-        } else if ("Wednesday".equals(name)) {
+        } else if ("Wednesday".equals(name) || "Среда".equals(name)) {
             result = 3;
-        } else if ("Среда".equals(name)) {
-            result = 3;
-        } else if ("Thursday".equals(name)) {
+        } else if ("Thursday".equals(name) || "Четверг".equals(name)) {
             result = 4;
-        } else if ("Четверг".equals(name)) {
-            result = 4;
-        } else if ("Friday".equals(name)) {
+        } else if ("Friday".equals(name) || "Пятница".equals(name)) {
             result = 5;
-        } else if ("Пятница".equals(name)) {
-            result = 5;
-        } else if ("Saturday".equals(name)) {
+        } else if ("Saturday".equals(name) || "Суббота".equals(name)) {
             result = 6;
-        } else if ("Суббота".equals(name)) {
-            result = 6;
-        } else if ("Sunday".equals(name)) {
-            result = 7;
-        } else if ("Воскресенье".equals(name)) {
+        } else if ("Sunday".equals(name) || "Воскресенье".equals(name)) {
             result = 7;
         }
         return result;
