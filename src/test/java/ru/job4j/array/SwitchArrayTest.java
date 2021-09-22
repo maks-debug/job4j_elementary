@@ -18,16 +18,6 @@ public class SwitchArrayTest {
     }
 
     @Test
-    public void whenSwap0to4ThenNotChange() {
-        int[] input = {1, 2, 3, 4};
-        int source = 0;
-        int dest = 4;
-        int[] result = SwitchArray.swap(input, source, dest);
-        int[] expected = {1, 2, 3, 4};
-        Assert.assertArrayEquals(expected, result);
-    }
-
-    @Test
     public void whenSwap2to3() {
         int[] input = {1, 2, 3, 4};
         int source = 2;
